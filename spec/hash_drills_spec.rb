@@ -55,7 +55,7 @@ describe 'ketogenic_ingredients' do
     it 'returns a Hash of ketogenic ingredients' do
       expect(ketogenic_ingredients).not_to include(:sweets)
       expect(ketogenic_ingredients[:protein][:meat]).to include("chicken", "fish", "steak")
-      expect(ketogenic_ingredients[:protein][:other]).to include("eggs", "nuts","beans")
+      expect(ketogenic_ingredients[:protein][:other]).to include("eggs", "nuts")
       expect(ketogenic_ingredients[:dairy]).not_to include("milk", "yogurt")
       expect(ketogenic_ingredients[:dairy]).to include("cheese")
       expect(ketogenic_ingredients).not_to include(:fruits)
